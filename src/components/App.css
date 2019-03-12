@@ -1,0 +1,204 @@
+body {
+  background: #120F23;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 26.85%;
+  bottom: 44.7%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 32px;
+  font-size: 32px;
+  color: #94AEBF;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 24px;
+  color: #94AEBF;
+  text-transform: uppercase;
+}
+
+input#email {
+  width: 65%;
+  height: 45px;
+  background: #2a273a;
+  border-color: #2a273a;
+  mix-blend-mode: normal;
+  border-radius: 5px;
+  color: #94AEBF;
+}
+
+input#firstName, input#lastName {
+  width: 30%;
+  height: 45px;
+  background: #2a273a;
+  border-color: #2a273a;
+  mix-blend-mode: normal;
+  border-radius: 5px;
+  margin-right: 2%;
+  color: #94AEBF;
+}
+
+input::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 32px;
+  padding: 5%;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  mix-blend-mode: normal;
+}
+
+input[value] {
+  font-size: 24px;
+}
+
+button {
+  width: 25%;
+  height: 55px;
+  background: #ED1F34;
+  border-color: #ED1F34;
+  border-radius: 5px;
+  margin-left: 2%;
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p.terms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terms, .terms a {
+  font-style: normal;
+  font-weight: 300;
+  line-height: 14px;
+  font-size: 12px;
+  color: #888888;
+  width: 60%;
+}
+
+span#checkbox {
+  margin: -3.5% 2% 0 0;
+}
+
+.thank-you-text {
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 26px;
+  color: #94AEBF;
+}
+
+p.error {
+  color: red;
+  font-size: 20px;
+}
+
+
+
+/* Tablet Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    h3, button, .thank-you-text {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+}
+
+/* Tablet Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    h2 {
+      font-size: 28px;
+    }
+    h3, button, .thank-you-text, p.error {
+      font-size: 20px;
+    }
+}
+
+
+/* Mobile */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .content {
+      text-align: center;
+    }
+    .header, .thank-you {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    h2, h3  {
+      width: 50%;
+    }
+    h3.long {
+      width: 70%;
+    }
+    h3, button {
+      font-size: 16px;
+    }
+    input#email {
+      width: 90%;
+      margin-bottom: 3%;
+    }
+    input#firstName, input#lastName {
+      width: 43%;
+      margin-bottom: 5%;
+      height: 45px;
+    }
+    span#checkbox {
+      margin-right: -1%;
+    }
+    button {
+      width: 90%;
+    }
+    .thank-you-text {
+      width: 70%;
+      font-size: 18px;
+    }
+    input[value], input::-webkit-input-placeholder, p.error {
+      font-size: 14px;
+    }
+    .terms {
+      width: 93%;
+      margin-left: 4%;
+    }
+}
+
+
+
